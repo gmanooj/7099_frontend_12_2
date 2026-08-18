@@ -1,0 +1,22 @@
+Git 
+It is a software which runs on your local system it tracks your local file system - what changes you make - that is there modules change 
+- everything in git and it will read that 
+
+it will take your file - to the online website called GitHub 
+
+you can use the git command.
+
+Git Hub 
+website - web application run on your cloud 
+storage of your files -
+who will use - 
+
+Private repo 
+Public repo - local file saving and tracking / project demo as a single person 
+
+git init 
+git commit 
+git add .
+git branch -M main 
+git remote add origin repolink
+git push -u origin main 
