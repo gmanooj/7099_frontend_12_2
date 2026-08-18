@@ -1,0 +1,106 @@
+Day 1 of Git basics 
+
+Table of Content 
+
+1. What is Git Work Flow 
+2. Git Commands (Basic)
+3. Git WorkFlow chart
+4. Git Practice 
+5. Git to GitHub  
+6. Conclusion of Git on Day 1 
+7. Newly created repo's link
+ 
+1. Git's Workflow : 
+
+    What is a Git's Workflow ? 
+
+    The process of Git starts with basic system setup which enables Git commands on your machine to 
+    create a local repository, which is the starting point of the Git Workflow.
+
+    What is Local repo ? 
+
+    Local repo is the local storage area of the Git Workflow where your project files and change histories 
+    are stored locally on your system. It is the starting point of the Git Workflow.
+
+    What is Remote repo ? 
+
+    Remote repo is the cloud/remote storage of the Git Workflow where your code and commits are saved remotely 
+    on a server like GitHub. It is the end point of the Git Workflow.
+
+    What is Branches ? 
+    
+    Branches are independent lines of development in Git. They allow you to create a separate copy of the repository 
+    to work on features or fixes without affecting the main codebase.
+
+2. Git Commands Basic:
+
+    2.1 git init
+
+        Which is the command to initialize the Git Workflow in the local repo. 
+        It is the starting point of the Git Workflow. 
+
+    2.2 git add . 
+
+        This command adds all the new and modified files from your local Working Directory to the Staging Area on your local system. 
+        It prepares the changes into a group ready to be committed. 
+
+    2.3 git commit -m "messages about the commit and purpose of that with in a 3 words" :
+
+        This command commits the staged changes to the local repo and saves a permanent snapshot in your local project history.
+
+    2.4 git branch -M main :
+
+        This command renames the current active branch (such as 'master') to 'main'. 
+        The '-M' flag forces the rename so it aligns with GitHub's default branch standard.
+        
+    2.5 git remote add origin [repo_url] :
+
+        This command connects your local repo to a remote repo on GitHub (or another platform).
+        'origin' is the standard nickname given to that remote repository URL.
+        This step creates the link between your local machine and cloud storage. 
+
+    2.6 git push -u origin main :
+
+        This command uploads your committed changes from your local repo to the remote repo on GitHub.
+        '-u' (short for --set-upstream) tells Git to remember this connection for future pushes.
+
+    2.7 git push :
+
+        This command uploads your committed changes from your local repo to the remote repo on GitHub after the initial upstream setup is done.
+
+3. Git Work Flow Chart : 
+
+    git init -> git add -> git commit -> git branch -> git remote -> git push   
+    
+4. Git Practice :
+
+    Commands which I have successfully practiced:
+    1. git init
+    2. git add .
+    3. git commit -m "commit message"
+    4. git branch -M main
+    5. git remote add origin https://github.com/gmanooj/7099_frontend_12_2.git
+    6. git push -u origin main
+    7. git push
+
+5. Git to GitHub : 
+
+    5.0 First, we have to create a GitHub account.
+    5.1 Create a new repository on GitHub.
+    5.2 Initialize a local repository on our system using `git init`.
+    5.3 Rename default branch to `main` using `git branch -M main`.
+    5.4 Stage and commit changes locally using `git add .` and `git commit -m "..."`.
+    5.5 Link local repo to remote using `git remote add origin [repo_url]`.
+    5.6 Push local commits to the remote GitHub repository using `git push -u origin main`.
+
+6. Conclusion :
+
+    On Day 1 of Git, I learned the complete foundational lifecycle of version control:
+    1. Git operates in 3 local areas (Working Directory -> Staging Area -> Local Repo) before uploading to GitHub (Remote Repo).
+    2. The core 3-step daily loop is: Make changes -> `git add .` -> `git commit -m "..."`.
+    3. GitHub acts as our online backup and team collaboration platform.
+    4. Linking local repo to GitHub using `git remote add origin` allows us to push our daily work safely to the cloud with `git push`.
+
+7. Newly created repo's link :
+
+    https://github.com/gmanooj/7099_frontend_12_2.git
