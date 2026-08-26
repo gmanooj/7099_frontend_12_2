@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 - Student Registration Form</title>
+</head>
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form>
+        <p>
+            <label>Name:</label><br>
+            <input type="text" name="name">
+        </p>
+
+        <p>
+            <label>Email:</label><br>
+            <input type="email" name="email">
+        </p>
+
+        <p>
+            <label>Password:</label><br>
+            <input type="password" name="password">
+        </p>
+
+        <p>
+            <label>Age:</label><br>
+            <input type="number" name="age">
+        </p>
+
+        <p>
+            <label>Date of Birth:</label><br>
+            <input type="date" name="dob">
+        </p>
+
+        <p>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </p>
+
+        <p>
+            <label>Course:</label><br>
+            <select name="course">
+                <option value="fullstack">Full Stack Development</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+            </select>
+        </p>
+
+        <p>
+            <label>Skills:</label><br>
+            <input type="checkbox" id="html" name="skills" value="HTML">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="skills" value="CSS">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="js" name="skills" value="JavaScript">
+            <label for="js">JavaScript</label>
+        </p>
+
+        <p>
+            <label>Address:</label><br>
+            <textarea name="address" rows="4" cols="30"></textarea>
+        </p>
+
+        <p>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </p>
+    </form>
+
+</body>
+</html>
