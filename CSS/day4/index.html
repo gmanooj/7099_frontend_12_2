@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Day 4 Tasks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .task1-container {
+            display: flex;
+            flex-direction: row;
+            background-color: lightblue;
+            padding: 10px;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .task1-box {
+            background-color: white;
+            padding: 15px 25px;
+            border: 2px solid darkblue;
+        }
+
+        .task2-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 200px;
+            background-color: lightgray;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+
+        .task2-box {
+            background-color: lightgreen;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            border: 2px solid green;
+        }
+
+        .task3-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            background-color: lightgoldenrodyellow;
+            padding: 20px;
+            width: 420px;
+        }
+
+        .task3-box {
+            background-color: lightsalmon;
+            width: 110px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            border: 2px solid coral;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Task 1: Flex Direction</h2>
+    <div class="task1-container">
+        <div class="task1-box">HTML</div>
+        <div class="task1-box">CSS</div>
+        <div class="task1-box">JavaScript</div>
+        <div class="task1-box">React</div>
+        <div class="task1-box">Node.js</div>
+    </div>
+
+    <h2>Task 2: Justify Content & Align Items</h2>
+    <div class="task2-container">
+        <div class="task2-box">Box 1</div>
+        <div class="task2-box">Box 2</div>
+        <div class="task2-box">Box 3</div>
+        <div class="task2-box">Box 4</div>
+    </div>
+
+    <h2>Task 3: Flex Wrap</h2>
+    <div class="task3-container">
+        <div class="task3-box">HTML</div>
+        <div class="task3-box">CSS</div>
+        <div class="task3-box">JavaScript</div>
+        <div class="task3-box">React</div>
+        <div class="task3-box">Node.js</div>
+        <div class="task3-box">MongoDB</div>
+    </div>
+
+</body>
+</html>
