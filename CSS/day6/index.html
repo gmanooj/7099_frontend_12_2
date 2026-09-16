@@ -3,17 +3,314 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>CSS Grid & Responsive Media Queries</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <div class="bg-dark p-3 d-flex justify-content-between align-items-center position-fixed shadow-sm ">
-        <div >
-        </div>
-        </div>
+    <header class="navbar">
+        <div class="logo">GridTech Hub</div>
+        <nav class="nav-links">
+            <a href="#products">Products</a>
+            <a href="#team">Team</a>
+            <a href="#dashboard">Dashboard</a>
+        </nav>
+    </header>
 
-        </div>
-    </div>
-    
+    <main class="page-container">
+        <section class="hero-banner">
+            <h1 class="hero-title">CSS Grid & Responsive Layouts</h1>
+            <p class="hero-subtitle">Comprehensive showcase of 2D Grid layouts with responsive media queries</p>
+        </section>
+
+        <section id="products" class="content-section">
+            <div class="section-header">
+                <h2 class="section-title">Featured Products</h2>
+                <p class="section-subtitle">Explore our latest tech collection with interactive hover effects</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500&auto=format&fit=crop&q=80" alt="Mechanical Keyboard">
+                    </div>
+                    <div class="product-body">
+                        <h3 class="product-title">RGB Mechanical Keyboard</h3>
+                        <p class="product-price">₹3,499</p>
+                        <p class="product-desc">Custom tactile mechanical switches with dynamic RGB backlighting and wrist rest.</p>
+                        <button class="btn-buy">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=80" alt="Wireless Headphones">
+                    </div>
+                    <div class="product-body">
+                        <h3 class="product-title">Wireless Studio Headphones</h3>
+                        <p class="product-price">₹2,999</p>
+                        <p class="product-desc">Active noise-cancellation with crystal clear acoustics and 40-hour battery life.</p>
+                        <button class="btn-buy">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=500&auto=format&fit=crop&q=80" alt="4K Ultra Monitor">
+                    </div>
+                    <div class="product-body">
+                        <h3 class="product-title">Ultra HD 4K Monitor</h3>
+                        <p class="product-price">₹18,499</p>
+                        <p class="product-desc">Frameless IPS display with HDR400, 144Hz refresh rate, and vivid color accuracy.</p>
+                        <button class="btn-buy">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500&auto=format&fit=crop&q=80" alt="Gaming Mouse">
+                    </div>
+                    <div class="product-body">
+                        <h3 class="product-title">Precision Gaming Mouse</h3>
+                        <p class="product-price">₹1,299</p>
+                        <p class="product-desc">Ultra-lightweight ergonomic mouse with 16000 DPI optical sensor and PTFE feet.</p>
+                        <button class="btn-buy">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=80" alt="Smart Fitness Watch">
+                    </div>
+                    <div class="product-body">
+                        <h3 class="product-title">Smart Fitness Watch</h3>
+                        <p class="product-price">₹2,499</p>
+                        <p class="product-desc">Real-time heart rate tracking, SpO2 sensor, AMOLED display, and IP68 waterproof.</p>
+                        <button class="btn-buy">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1625842268584-8f3296236761?w=500&auto=format&fit=crop&q=80" alt="USB-C Hub">
+                    </div>
+                    <div class="product-body">
+                        <h3 class="product-title">USB-C Multiport Dock</h3>
+                        <p class="product-price">₹3,999</p>
+                        <p class="product-desc">10-in-1 universal dock with dual HDMI 4K, 100W PD charging, and Gigabit Ethernet.</p>
+                        <button class="btn-buy">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="content-section">
+            <div class="section-header">
+                <h2 class="section-title">Our Expert Team</h2>
+                <p class="section-subtitle">Meet the talented professionals powering our innovation</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="member-img-wrap">
+                        <img class="member-img" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80" alt="Priya Sharma">
+                    </div>
+                    <h3 class="member-name">Priya Sharma</h3>
+                    <p class="member-role">Senior UI/UX Architect</p>
+                    <p class="member-email">priya.s@techcraft.io</p>
+                    <button class="btn-profile">View Profile</button>
+                </div>
+
+                <div class="team-card">
+                    <div class="member-img-wrap">
+                        <img class="member-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80" alt="Rajesh Kumar">
+                    </div>
+                    <h3 class="member-name">Rajesh Kumar</h3>
+                    <p class="member-role">Lead Full Stack Engineer</p>
+                    <p class="member-email">rajesh.k@techcraft.io</p>
+                    <button class="btn-profile">View Profile</button>
+                </div>
+
+                <div class="team-card">
+                    <div class="member-img-wrap">
+                        <img class="member-img" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80" alt="Ananya Patel">
+                    </div>
+                    <h3 class="member-name">Ananya Patel</h3>
+                    <p class="member-role">AI & Data Scientist</p>
+                    <p class="member-email">ananya.p@techcraft.io</p>
+                    <button class="btn-profile">View Profile</button>
+                </div>
+
+                <div class="team-card">
+                    <div class="member-img-wrap">
+                        <img class="member-img" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80" alt="Vikram Singh">
+                    </div>
+                    <h3 class="member-name">Vikram Singh</h3>
+                    <p class="member-role">Cloud DevOps Engineer</p>
+                    <p class="member-email">vikram.s@techcraft.io</p>
+                    <button class="btn-profile">View Profile</button>
+                </div>
+
+                <div class="team-card">
+                    <div class="member-img-wrap">
+                        <img class="member-img" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=80" alt="Sneha Reddy">
+                    </div>
+                    <h3 class="member-name">Sneha Reddy</h3>
+                    <p class="member-role">Product Design Lead</p>
+                    <p class="member-email">sneha.r@techcraft.io</p>
+                    <button class="btn-profile">View Profile</button>
+                </div>
+
+                <div class="team-card">
+                    <div class="member-img-wrap">
+                        <img class="member-img" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&auto=format&fit=crop&q=80" alt="Amit Verma">
+                    </div>
+                    <h3 class="member-name">Amit Verma</h3>
+                    <p class="member-role">Mobile App Developer</p>
+                    <p class="member-email">amit.v@techcraft.io</p>
+                    <button class="btn-profile">View Profile</button>
+                </div>
+
+                <div class="team-card">
+                    <div class="member-img-wrap">
+                        <img class="member-img" src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?w=400&auto=format&fit=crop&q=80" alt="Pooja Nair">
+                    </div>
+                    <h3 class="member-name">Pooja Nair</h3>
+                    <p class="member-role">QA & Security Analyst</p>
+                    <p class="member-email">pooja.n@techcraft.io</p>
+                    <button class="btn-profile">View Profile</button>
+                </div>
+
+                <div class="team-card">
+                    <div class="member-img-wrap">
+                        <img class="member-img" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&auto=format&fit=crop&q=80" alt="Karan Mehra">
+                    </div>
+                    <h3 class="member-name">Karan Mehra</h3>
+                    <p class="member-role">Backend System Architect</p>
+                    <p class="member-email">karan.m@techcraft.io</p>
+                    <button class="btn-profile">View Profile</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="dashboard" class="content-section">
+            <div class="dashboard-wrapper">
+                <div class="dashboard-header">
+                    <div class="dashboard-branding">
+                        <div class="dash-logo-icon">📊</div>
+                        <div>
+                            <h2 class="dash-title">Admin Dashboard</h2>
+                            <p class="dash-sub">Live Academic & Career Performance Metrics</p>
+                        </div>
+                    </div>
+                    <div class="admin-profile-badge">
+                        <div class="admin-avatar">M</div>
+                        <div class="admin-meta">
+                            <span class="admin-name">Manooj</span>
+                            <span class="admin-badge">Super Admin</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card stat-students">
+                        <div class="stat-icon">🎓</div>
+                        <div class="stat-info">
+                            <h3 class="stat-value">1,420</h3>
+                            <p class="stat-label">Total Students</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card stat-courses">
+                        <div class="stat-icon">📚</div>
+                        <div class="stat-info">
+                            <h3 class="stat-value">48</h3>
+                            <p class="stat-label">Total Courses</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card stat-trainers">
+                        <div class="stat-icon">👨‍🏫</div>
+                        <div class="stat-info">
+                            <h3 class="stat-value">32</h3>
+                            <p class="stat-label">Total Trainers</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card stat-placements">
+                        <div class="stat-icon">💼</div>
+                        <div class="stat-info">
+                            <h3 class="stat-value">980</h3>
+                            <p class="stat-label">Total Placements</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recent-students-card">
+                    <div class="table-header-box">
+                        <h3 class="table-title">Recent Students</h3>
+                        <span class="table-tag">Updated Just Now</span>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="students-table">
+                            <thead>
+                                <tr>
+                                    <th>Student Name</th>
+                                    <th>Course</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="student-cell">
+                                        <div class="cell-avatar bg-blue">RM</div>
+                                        <span>Rohan Mehta</span>
+                                    </td>
+                                    <td>Full Stack Web Development</td>
+                                    <td><span class="status-badge status-placed">Placed</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="student-cell">
+                                        <div class="cell-avatar bg-green">DK</div>
+                                        <span>Divya Kapoor</span>
+                                    </td>
+                                    <td>React & Frontend Architecture</td>
+                                    <td><span class="status-badge status-active">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="student-cell">
+                                        <div class="cell-avatar bg-purple">AS</div>
+                                        <span>Arjun Sharma</span>
+                                    </td>
+                                    <td>UI/UX Design Masterclass</td>
+                                    <td><span class="status-badge status-placed">Placed</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="student-cell">
+                                        <div class="cell-avatar bg-amber">SK</div>
+                                        <span>Siddharth Kulkarni</span>
+                                    </td>
+                                    <td>Node.js & Cloud Backend</td>
+                                    <td><span class="status-badge status-enrolled">Enrolled</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="student-cell">
+                                        <div class="cell-avatar bg-teal">TI</div>
+                                        <span>Tanvi Iyer</span>
+                                    </td>
+                                    <td>Data Science & ML Foundation</td>
+                                    <td><span class="status-badge status-completed">Completed</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 GridTech Hub. All rights reserved.</p>
+    </footer>
 </body>
 </html>
