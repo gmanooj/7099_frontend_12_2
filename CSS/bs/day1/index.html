@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 - Day 1 Fundamentals</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-info" href="#">Bootstrap 5 Day 1</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#buttons">Buttons</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#colors">Colors & Badges</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#alerts">Alerts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cards">Cards & Grid</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="p-5 mb-5 bg-white rounded-4 shadow-sm border text-center">
+            <h1 class="display-5 fw-bold text-primary mb-3">Welcome to Bootstrap 5</h1>
+            <p class="lead text-secondary mb-4">Learn the essential core components of Bootstrap including containers, typography, buttons, colors, alerts, and responsive cards.</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="#buttons" class="btn btn-primary btn-lg px-4 fw-semibold">Explore Buttons</a>
+                <a href="#cards" class="btn btn-outline-dark btn-lg px-4 fw-semibold">View Cards</a>
+            </div>
+        </div>
+
+        <section id="buttons" class="mb-5 p-4 bg-white rounded-4 shadow-sm border">
+            <div class="border-bottom pb-2 mb-4">
+                <h2 class="h3 fw-bold text-dark">1. Bootstrap Buttons</h2>
+                <p class="text-muted small">Standard theme buttons, outline variations, sizes, and button groups.</p>
+            </div>
+
+            <div class="mb-4">
+                <h5 class="fw-semibold text-secondary mb-3">Solid Color Buttons</h5>
+                <div class="d-flex flex-wrap gap-2">
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-warning text-dark">Warning</button>
+                    <button type="button" class="btn btn-info text-dark">Info</button>
+                    <button type="button" class="btn btn-light border text-dark">Light</button>
+                    <button type="button" class="btn btn-dark">Dark</button>
+                    <button type="button" class="btn btn-link">Link Button</button>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h5 class="fw-semibold text-secondary mb-3">Outline Buttons</h5>
+                <div class="d-flex flex-wrap gap-2">
+                    <button type="button" class="btn btn-outline-primary">Primary</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-outline-success">Success</button>
+                    <button type="button" class="btn btn-outline-danger">Danger</button>
+                    <button type="button" class="btn btn-outline-warning text-dark">Warning</button>
+                    <button type="button" class="btn btn-outline-info text-dark">Info</button>
+                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                </div>
+            </div>
+
+            <div class="row g-3 align-items-center">
+                <div class="col-md-6">
+                    <h5 class="fw-semibold text-secondary mb-3">Button Sizing</h5>
+                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                        <button type="button" class="btn btn-primary btn-lg">Large</button>
+                        <button type="button" class="btn btn-primary">Regular</button>
+                        <button type="button" class="btn btn-primary btn-sm">Small</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="fw-semibold text-secondary mb-3">Button Group</h5>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-primary">Left</button>
+                        <button type="button" class="btn btn-primary">Middle</button>
+                        <button type="button" class="btn btn-primary">Right</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="colors" class="mb-5 p-4 bg-white rounded-4 shadow-sm border">
+            <div class="border-bottom pb-2 mb-4">
+                <h2 class="h3 fw-bold text-dark">2. Contextual Colors & Badges</h2>
+                <p class="text-muted small">Theme text colors, background utilities, and badges.</p>
+            </div>
+
+            <div class="row g-4 mb-4">
+                <div class="col-md-6">
+                    <h5 class="fw-semibold text-secondary mb-3">Text Colors</h5>
+                    <p class="text-primary fw-bold mb-1">.text-primary - Primary theme blue</p>
+                    <p class="text-success fw-bold mb-1">.text-success - Success message green</p>
+                    <p class="text-danger fw-bold mb-1">.text-danger - Error or critical alert red</p>
+                    <p class="text-warning bg-dark p-1 rounded fw-bold mb-1">.text-warning - Warning alert yellow</p>
+                    <p class="text-info fw-bold mb-1">.text-info - Information highlight cyan</p>
+                    <p class="text-muted mb-0">.text-muted - Subtle secondary text</p>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="fw-semibold text-secondary mb-3">Badges & Labels</h5>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <span class="badge bg-primary">Primary</span>
+                        <span class="badge bg-secondary">Secondary</span>
+                        <span class="badge bg-success">Success</span>
+                        <span class="badge bg-danger">Danger</span>
+                        <span class="badge bg-warning text-dark">Warning</span>
+                        <span class="badge bg-info text-dark">Info</span>
+                        <span class="badge bg-dark">Dark</span>
+                    </div>
+                    <h6 class="fw-semibold text-secondary mb-2">Pill Badges</h6>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge rounded-pill bg-primary">Active User</span>
+                        <span class="badge rounded-pill bg-success">Verified</span>
+                        <span class="badge rounded-pill bg-danger">Offline</span>
+                        <span class="badge rounded-pill bg-info text-dark">Day 1</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="alerts" class="mb-5 p-4 bg-white rounded-4 shadow-sm border">
+            <div class="border-bottom pb-2 mb-4">
+                <h2 class="h3 fw-bold text-dark">3. Contextual Alerts</h2>
+                <p class="text-muted small">Provide feedback messages for typical user actions.</p>
+            </div>
+
+            <div class="alert alert-primary d-flex justify-content-between align-items-center" role="alert">
+                <div><strong>Note:</strong> Bootstrap 5 CSS CDN is loaded and functioning correctly!</div>
+                <span class="badge bg-primary">Info</span>
+            </div>
+
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Success!</strong> Your workspace environment has been successfully configured.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Warning!</strong> Make sure to include the Popper JS bundle for interactive components.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+
+            <div class="alert alert-danger mb-0" role="alert">
+                <strong>Danger!</strong> Do not modify vendor minified files directly; use custom classes in index.css.
+            </div>
+        </section>
+
+        <section id="cards" class="mb-5 p-4 bg-white rounded-4 shadow-sm border">
+            <div class="border-bottom pb-2 mb-4">
+                <h2 class="h3 fw-bold text-dark">4. Cards & Responsive Grid</h2>
+                <p class="text-muted small">Built with .row and .col-md-4 responsive grid columns.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 bg-light">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&auto=format&fit=crop&q=80" class="card-img-top card-custom-img" alt="Frontend Course">
+                        <div class="card-body d-flex flex-direction-column flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-primary">Web Design</span>
+                                <span class="fw-bold text-primary">₹2,499</span>
+                            </div>
+                            <h5 class="card-title fw-bold text-dark">HTML5 & CSS3 Mastery</h5>
+                            <p class="card-text text-secondary flex-grow-1">Learn modern semantic HTML5, CSS Flexbox, Grid systems, and design aesthetics from scratch.</p>
+                            <a href="#" class="btn btn-primary w-100 mt-3">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 bg-light">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&auto=format&fit=crop&q=80" class="card-img-top card-custom-img" alt="Bootstrap 5">
+                        <div class="card-body d-flex flex-direction-column flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-success">Framework</span>
+                                <span class="fw-bold text-primary">₹1,999</span>
+                            </div>
+                            <h5 class="card-title fw-bold text-dark">Bootstrap 5 Essentials</h5>
+                            <p class="card-text text-secondary flex-grow-1">Master the world's most popular responsive frontend toolkit with utilities, cards, and grid system.</p>
+                            <a href="#" class="btn btn-success w-100 mt-3">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 bg-light">
+                        <img src="https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=500&auto=format&fit=crop&q=80" class="card-img-top card-custom-img" alt="JavaScript">
+                        <div class="card-body d-flex flex-direction-column flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-dark">Programming</span>
+                                <span class="fw-bold text-primary">₹3,499</span>
+                            </div>
+                            <h5 class="card-title fw-bold text-dark">Modern JavaScript (ES6+)</h5>
+                            <p class="card-text text-secondary flex-grow-1">Build dynamic and interactive web apps with asynchronous JS, DOM manipulation, and modern syntax.</p>
+                            <a href="#" class="btn btn-dark w-100 mt-3">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-1 fw-semibold">&copy; 2026 Bootstrap 5 Learning Series</p>
+            <small class="text-secondary">Designed with Bootstrap 5 CDN utilities and components</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
