@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions, Transforms & Pseudo Selectors</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">WebCraft Studio</div>
+        <nav class="nav-links">
+            <a href="#buttons">Action Buttons</a>
+            <a href="#profile">Profile</a>
+            <a href="#products">Products</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero-intro">
+            <h1 class="page-title">Interactive CSS Showcase</h1>
+            <p class="subtitle">Exploring Pseudo-classes, Pseudo-elements, Transitions, and Transforms</p>
+        </section>
+
+        <section id="buttons" class="section-card">
+            <h2 class="section-heading">Action Buttons</h2>
+            <div class="button-group">
+                <button class="btn btn-login">Login</button>
+                <button class="btn btn-register">Register</button>
+                <button class="btn btn-contact">Contact</button>
+            </div>
+        </section>
+
+        <section id="profile" class="section-card">
+            <h2 class="section-heading">Team Profile</h2>
+            <div class="profile-container">
+                <div class="profile-card">
+                    <div class="profile-img-wrapper">
+                        <img class="profile-img" src="./assets/founder.png" alt="Manooj">
+                    </div>
+                    <h3 class="profile-name">Manooj</h3>
+                    <p class="profile-role">Full Stack Engineer</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="section-card">
+            <h2 class="section-heading">Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-img-box">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=80" alt="Wireless Headphones">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Wireless Headphones</h3>
+                        <p class="product-price">₹1,999</p>
+                        <button class="btn-details">View Details</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-box">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=80" alt="Smart Watch Pro">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Smart Watch Pro</h3>
+                        <p class="product-price">₹1,499</p>
+                        <button class="btn-details">View Details</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-box">
+                        <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500&auto=format&fit=crop&q=80" alt="Mechanical Keyboard">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Mechanical Keyboard</h3>
+                        <p class="product-price">₹1,299</p>
+                        <button class="btn-details">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 WebCraft Studio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
